@@ -1,14 +1,14 @@
-<template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-  </q-page>
+<template lang="pug">
+  q-page
+    table1
 </template>
 
 <style>
 </style>
 
 <script>
+import table1 from '../components/table1'
 export default {
-  name: 'PageIndex'
+  components: { table1 }
 }
 </script>

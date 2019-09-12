@@ -1,14 +1,5 @@
-<template>
-  <q-layout view="lHh Lpr lFf">
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+<template lang="pug">
+  q-layout
+    q-page-container
+      router-view
 </template>
-
-<script>
-export default {
-</script>
-
-<style>
-</style>

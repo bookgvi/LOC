@@ -43,7 +43,11 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QTable',
+        'QTh',
+        'QTr',
+        'QTd'
       ],
 
       directives: [
@@ -77,7 +81,7 @@ module.exports = function (ctx) {
         }),
         cfg.module.rules.push({
           test: /\.(pug)$/,
-          loader: 'pug-plain-loader',
+          loader: 'pug-plain-loader'
         })
       }
     },
