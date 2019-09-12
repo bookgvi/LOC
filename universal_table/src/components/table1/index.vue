@@ -13,16 +13,14 @@ export default {
   data: () => ({
     columns: [
       { name: 'id', label: 'id', field: 'id' },
-      { name: 'name', label: 'name', field: 'name' },
-      { name: 'comment', label: 'comment', field: 'comment' }
+      { name: 'name', label: 'name', field: 'name', align: 'left', width: 200 },
+      { name: 'comment', label: 'comment', field: 'comment', classes: 'text-red' }
     ],
     datas: [
       {
         id: 1,
         name: 'Item1',
-        comment: 'dummy1',
-        align: 'left',
-        width: 200
+        comment: 'dummy1'
       },
       {
         id: 2,

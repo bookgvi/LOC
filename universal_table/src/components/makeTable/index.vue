@@ -3,7 +3,10 @@
     q-table(
       :columns="columns"
       :data="data"
+      hide-header
+      hide-bottom
     )
+      template(#header="props")
 </template>
 
 <script>
@@ -14,11 +17,13 @@ export default {
     columns: Array
   },
   created () {
-    this.data.forEach((item, index) => {
+    this.columns.forEach((item, index) => {
       if (item.width) {
-        Vue.set(this.columns[index], 'style', `width: ${item.width}px`)
-        Vue.set(this.columns[index], 'align', item.align)
-        Vue.set(this.columns[index], 'classes', item.classes)
+        Vue.set(item, 'style', `width: ${item.width}px`)
+      } else if (item.align) {
+        Vue.set(item, 'align', item.align)
+      } else if (item.classes) {
+        Vue.set(item, 'classes', item.classes)
       }
     })
     console.log(this.data)
