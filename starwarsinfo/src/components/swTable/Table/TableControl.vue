@@ -2,9 +2,9 @@
   .table-control
     q-pagination(
       :max="maxPages"
+      :direction-links="true"
       :value="pagination.page"
       @input="value => setPage('page', value)"
-      :boundary-numbers="true"
       :max-pages="5"
       color="grey-5"
     )
