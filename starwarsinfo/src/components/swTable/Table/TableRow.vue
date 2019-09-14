@@ -2,7 +2,9 @@
   q-tr
     q-td(v-for="({ name, __tdClass }, value) in cols" :key="value" :class="__tdClass")
       template(v-if="name === 'id'") {{ row.id }}
-      template(v-else-if="name === 'name'") {{ row.name }}
+      template(v-else-if="name === 'name'")
+        .inline-block(@click.prevent="card = true")
+          q-chip(style="cursor: pointer;") {{ row.name }}
       template(v-else-if="name === 'height'") {{ row.height }}
       template(v-else-if="name === 'mass'") {{ row.mass }}
       template(v-else-if="name === 'homeworld'")
