@@ -5,6 +5,10 @@
       template(v-else-if="name === 'name'") {{ row.name }}
       template(v-else-if="name === 'height'") {{ row.height }}
       template(v-else-if="name === 'mass'") {{ row.mass }}
+      template(v-else-if="name === 'homeworld'")
+        .inline-block(@click.prevent="")
+          q-chip(style="cursor: pointer;") {{ row.homeworld }}
+        slot(#planet)
 </template>
 
 <script>

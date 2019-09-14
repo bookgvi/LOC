@@ -13,7 +13,7 @@ export default [
   },
   {
     name: 'height',
-    label: 'height',
+    label: 'Height',
     field: 'height',
     align: 'center'
   },
@@ -21,6 +21,12 @@ export default [
     name: 'mass',
     label: 'mass',
     field: 'mass',
+    align: 'center'
+  },
+  {
+    name: 'homeworld',
+    label: 'Homeworld',
+    field: 'homeworld',
     align: 'center'
   }
 ]

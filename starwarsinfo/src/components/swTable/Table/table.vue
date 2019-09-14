@@ -2,7 +2,7 @@
   .table-class
     q-table(
       :columns="columns"
-      :data="data"
+      :data="persons"
       :pagination.sync="pagination"
       @request="onRequest"
       :loading="isLoading"
@@ -15,7 +15,7 @@
       template(#header-cell="props")
         q-th.text-center.bg-grey-2(style="color: grey;") {{ props.col.label }}
       template(#body="props")
-         TableRow(v-bind="props")
+        TableRow(v-bind="props")
 </template>
 
 <script>
@@ -23,6 +23,7 @@ import columns from './columns'
 import TableControl from './TableControl'
 import pagination from './pagination'
 import TableRow from './TableRow'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'tableComponent',
   components: { TableControl, TableRow },
@@ -34,6 +35,16 @@ export default {
       isLoading: false,
       maxPages: 0
     }
+  },
+  computed: {
+    ...mapGetters([
+      'persons'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'getPersons'
+    ])
   }
 }
 </script>

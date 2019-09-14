@@ -49,7 +49,8 @@ module.exports = function (ctx) {
         'QTh',
         'QTd',
         'QTr',
-        'QPagination'
+        'QPagination',
+        'QChip'
       ],
 
       directives: [
