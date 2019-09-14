@@ -9,19 +9,23 @@
       hide-bottom
     )
       template(#top-left)
-        q-th
-          h5.q-ma-none Star Wars
+        h5.q-ma-none Star Wars
       template(#top-right="props")
         TableControl(v-bind="props" :setPage="setPage" :maxPages="maxPages")
+      template(#header-cell="props")
+        q-th.text-center.bg-grey-2(style="color: grey;") {{ props.col.label }}
+      template(#body="props")
+         TableRow(v-bind="props")
 </template>
 
 <script>
 import columns from './columns'
 import TableControl from './TableControl'
 import pagination from './pagination'
+import TableRow from './TableRow'
 export default {
   name: 'tableComponent',
-  components: { TableControl },
+  components: { TableControl, TableRow },
   mixins: [pagination],
   data () {
     return {
