@@ -12,9 +12,9 @@ export default {
   components: { makeTable },
   data: () => ({
     columns: [
-      { name: 'id', label: 'id', field: 'id' },
-      { name: 'name', label: 'name', field: 'name', align: 'left', width: 200 },
-      { name: 'comment', label: 'comment', field: 'comment', classes: 'text-red' }
+      { name: 'id', label: 'ID', field: 'id' },
+      { name: 'name', label: 'NAME', field: 'name', align: 'left', width: 200 },
+      { name: 'comment', label: 'COMMENT', field: 'comment', classes: 'text-red' }
     ],
     datas: [
       {

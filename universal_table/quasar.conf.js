@@ -47,7 +47,9 @@ module.exports = function (ctx) {
         'QTable',
         'QTh',
         'QTr',
-        'QTd'
+        'QTd',
+        'QInput',
+        'QSelect'
       ],
 
       directives: [

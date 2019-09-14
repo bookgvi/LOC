@@ -3,10 +3,14 @@
     q-table(
       :columns="columns"
       :data="data"
-      hide-header
       hide-bottom
     )
-      template(#header="props")
+      template(#top-left)
+        h6.q-ma-none Table title
+      template(#top-right="props")
+        q-select(:options="props.pagination.page" :value="props.pagination.page" outlined dense)
+      template(#header-cell="props")
+        q-th {{ props.col.label }}
 </template>
 
 <script>
@@ -26,7 +30,6 @@ export default {
         Vue.set(item, 'classes', item.classes)
       }
     })
-    console.log(this.data)
   }
 }
 </script>
