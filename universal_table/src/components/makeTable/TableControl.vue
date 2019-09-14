@@ -10,7 +10,7 @@
       )
       q-pagination(
         boundary-numbers=true
-        :max-pages="pagesNumber"
+        :max-pages="4"
         :max="pagesNumber"
         :value="pagination.page"
         @input="value => setPage('page', value)"
@@ -27,7 +27,7 @@ export default {
     setPage: Function
   },
   data: () => ({
-    options: [1, 2, 3, 5]
+    options: [1, 2, 3, 4, 5]
   })
 }
 </script>

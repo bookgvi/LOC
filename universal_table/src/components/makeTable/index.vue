@@ -22,13 +22,15 @@ import TableControl from './TableControl'
 import pagination from './pagination'
 export default {
   props: {
-    data: Array,
     columns: Array
   },
   components: {
     TableControl
   },
   mixins: [pagination],
+  data: () => ({
+    data: []
+  }),
   created () {
     this.columns.forEach((item, index) => {
       if (item.width) {
