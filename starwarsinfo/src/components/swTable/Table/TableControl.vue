@@ -6,6 +6,7 @@
       @input="value => setPage('page', value)"
       :boundary-numbers="true"
       :max-pages="6"
+      color="grey-5"
     )
 </template>
 
