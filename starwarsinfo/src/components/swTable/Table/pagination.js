@@ -10,7 +10,7 @@ export default {
     async onRequest (relURL) {
       this.isLoading = true
       this.data = await this.$http.get(relURL).then(resp => resp.data.results)
-      // console.log(await this.$http.get('people').then(resp => resp.data.next))
+      // console.log(await this.$http.get('people').then(resp => resp.data))
       this.isLoading = false
     },
     setPage (props, value) {
@@ -21,6 +21,7 @@ export default {
   },
   async mounted () {
     this.onRequest('people')
-    this.maxPages = await this.$http.get('people').then(resp => resp.data.count)
+    const maxRows = await this.$http.get('people').then(resp => resp.data.count)
+    this.maxPages = Math.round(maxRows / this.data.length)
   }
 }
