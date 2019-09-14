@@ -20,8 +20,6 @@ export default {
   },
   async mounted () {
     await this.onRequest('people')
-    console.log('p', this.persons.length)
     this.maxPages = this.persons.length - 1
-    // this.maxPages = Math.round(maxRows / this.persons.length)
   }
 }
