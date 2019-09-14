@@ -49,7 +49,8 @@ module.exports = function (ctx) {
         'QTr',
         'QTd',
         'QInput',
-        'QSelect'
+        'QSelect',
+        'QPagination'
       ],
 
       directives: [

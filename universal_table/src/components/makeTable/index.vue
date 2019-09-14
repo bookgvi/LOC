@@ -1,25 +1,34 @@
 <template lang="pug">
   .table
     q-table(
+      row-key="id"
       :columns="columns"
       :data="data"
       hide-bottom
+      :pagination.sync="pagination"
+      @request="onRequest"
     )
       template(#top-left)
         h6.q-ma-none Table title
       template(#top-right="props")
-        q-select(:options="props.pagination.page" :value="props.pagination.page" outlined dense)
+        TableControl(v-bind="props" :setPage="setPage")
       template(#header-cell="props")
-        q-th {{ props.col.label }}
+        q-th(align="center") {{ props.col.label }}
 </template>
 
 <script>
 import Vue from 'vue'
+import TableControl from './TableControl'
+import pagination from './pagination'
 export default {
   props: {
     data: Array,
     columns: Array
   },
+  components: {
+    TableControl
+  },
+  mixins: [pagination],
   created () {
     this.columns.forEach((item, index) => {
       if (item.width) {

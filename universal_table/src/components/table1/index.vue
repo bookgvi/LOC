@@ -1,9 +1,10 @@
 <template lang="pug">
   .row.justify-center.q-pt-xl
-    make-table(
-      :columns="columns"
-      :data="datas"
-    )
+    .col-6
+      make-table(
+        :columns="columns"
+        :data="datas"
+      )
 </template>
 
 <script>
@@ -12,8 +13,8 @@ export default {
   components: { makeTable },
   data: () => ({
     columns: [
-      { name: 'id', label: 'ID', field: 'id' },
-      { name: 'name', label: 'NAME', field: 'name', align: 'left', width: 200 },
+      { name: 'id', label: 'ID', field: 'id', align: 'center' },
+      { name: 'name', label: 'NAME', field: 'name', align: 'center', width: 200 },
       { name: 'comment', label: 'COMMENT', field: 'comment', classes: 'text-red' }
     ],
     datas: [
@@ -24,6 +25,21 @@ export default {
       },
       {
         id: 2,
+        name: 'Item2',
+        comment: 'dummy2'
+      },
+      {
+        id: 3,
+        name: 'Item2',
+        comment: 'dummy2'
+      },
+      {
+        id: 4,
+        name: 'Item2',
+        comment: 'dummy2'
+      },
+      {
+        id: 5,
         name: 'Item2',
         comment: 'dummy2'
       }
