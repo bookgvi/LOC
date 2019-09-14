@@ -9,7 +9,7 @@ export default {
     this.setPagination()
   },
   methods: {
-    onRequest (start, count) {
+    async onRequest (start, count) {
       const datas = [
         {
           id: 1,
@@ -43,7 +43,12 @@ export default {
         }
       ]
       this.pagination.rowsNumber = datas.length
-      this.data = datas.slice(start, count)
+      this.isLoading = true
+      // this.data = []
+      await setTimeout(() => {
+        this.data = datas.slice(start, count)
+        this.isLoading = false
+      }, 1500)
     },
     setPage (prop, value) {
       if (this.pagination[prop] === value) { return }

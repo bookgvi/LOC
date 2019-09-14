@@ -5,6 +5,7 @@
       :columns="columns"
       :data="data"
       hide-bottom
+      :loading="isLoading"
       :pagination.sync="pagination"
       @request="onRequest"
     )
@@ -29,7 +30,8 @@ export default {
   },
   mixins: [pagination],
   data: () => ({
-    data: []
+    data: [],
+    isLoading: true
   }),
   created () {
     this.columns.forEach((item, index) => {
