@@ -2,13 +2,11 @@ export default {
   data: () => ({
     pagination: {
       rowsNumber: 1,
-      rowsPerPage: 1
+      rowsPerPage: 3
     }
   }),
   mounted () {
-    const start = (this.pagination.page - 1) * this.pagination.rowsPerPage
-    const count = (this.pagination.rowsPerPage * this.pagination.page)
-    this.onRequest(start, count)
+    this.setPagination()
   },
   methods: {
     onRequest (start, count) {
@@ -51,6 +49,9 @@ export default {
       if (this.pagination[prop] === value) { return }
       this.pagination.page = 1
       this.pagination[prop] = value
+      this.setPagination()
+    },
+    setPagination () {
       const start = (this.pagination.page - 1) * this.pagination.rowsPerPage
       const count = (this.pagination.rowsPerPage * this.pagination.page)
       this.onRequest(start, count)
