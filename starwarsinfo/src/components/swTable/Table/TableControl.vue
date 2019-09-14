@@ -5,7 +5,7 @@
       :value="pagination.page"
       @input="value => setPage('page', value)"
       :boundary-numbers="true"
-      :max-pages="6"
+      :max-pages="5"
       color="grey-5"
     )
 </template>

@@ -15,7 +15,7 @@
       template(#header-cell="props")
         q-th.text-center.bg-grey-2(style="color: grey;") {{ props.col.label }}
       template(#body="props")
-        TableRow(v-bind="props")
+        TableRow(v-bind="props", :getPlanet="getPlanet")
 </template>
 
 <script>
@@ -43,7 +43,8 @@ export default {
   },
   methods: {
     ...mapActions([
-      'getPersons'
+      'getPersons',
+      'getPlanet'
     ])
   }
 }

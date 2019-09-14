@@ -9,7 +9,7 @@ export const mutations = {
       Vue.set(item, 'id', index + 1 + 10 * (page - 1))
     })
   },
-  [types.GET_PLANET]: (state, payload) => {
-    state.planet = payload
+  [types.GET_PLANET]: (state, { planet, index }) => {
+    Vue.set(state.persons[index], 'homeworld', planet)
   }
 }

@@ -7,7 +7,7 @@
       template(v-else-if="name === 'mass'") {{ row.mass }}
       template(v-else-if="name === 'homeworld'")
         .inline-block(@click.prevent="")
-          q-chip(style="cursor: pointer;") {{ row.homeworld }}
+          q-chip(style="cursor: pointer;") {{ row.homeworld.name }}
         slot(#planet)
 </template>
 
@@ -15,21 +15,9 @@
 export default {
   props: {
     row: Object,
-    cols: Array
+    cols: Array,
+    getPlanet: Function
   },
-  name: 'TableRow',
-  data () {
-    return {
-      iterator: this.generator()
-    }
-  },
-  methods: {
-    * generator () {
-      for (let i = 1; i < 10; i++) {
-        console.log(i)
-        yield i
-      }
-    }
-  }
+  name: 'TableRow'
 }
 </script>
