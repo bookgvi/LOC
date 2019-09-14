@@ -7,7 +7,6 @@ export const actions = {
     commit(types.GET_PERSONS, { person, page })
     state.persons.forEach(async (item, index) => {
       const planet = await Vue.prototype.$http.get(item.homeworld.split('api/')[1]).then(resp => resp.data)
-      // item.homeworld = planet
       commit(types.GET_PLANET, { planet, index })
     })
   }
