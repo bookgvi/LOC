@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import axios from 'axios'
-import { Loading } from 'quasar'
+// import { Loading } from 'quasar'
 
 const baseURL = 'https://swapi.co/api/'
 const sw = axios.create({ baseURL })
 
 sw.interceptors.request.use(config => {
-  Loading.show()
+  // Loading.show()
   return config
 })
 sw.interceptors.response.use(resp => {
-  Loading.hide()
+  // Loading.hide()
   return resp
 }, err => {
-  Loading.hide()
+  // Loading.hide()
   return Promise.reject(err)
 })
 
