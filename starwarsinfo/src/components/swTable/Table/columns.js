@@ -28,5 +28,8 @@ export default [
     label: 'Homeworld',
     field: 'homeworld',
     align: 'center'
+  },
+  {
+    name: 'species'
   }
 ]

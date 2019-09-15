@@ -11,5 +11,8 @@ export const mutations = {
   },
   [types.GET_PLANET]: (state, { planet, index }) => {
     Vue.set(state.persons[index], 'homeworld', planet)
+  },
+  [types.GET_SPECIES]: (state, { species, index }) => {
+    Vue.set(state.persons[index], 'species', species)
   }
 }

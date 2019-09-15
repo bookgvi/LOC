@@ -8,6 +8,8 @@ export const actions = {
     state.persons.forEach(async (item, index) => {
       const planet = await Vue.prototype.$http.get(item.homeworld.split('api/')[1]).then(resp => resp.data)
       commit(types.GET_PLANET, { planet, index })
+      const species = await Vue.prototype.$http.get(item.species[0].split('api/')[1]).then(resp => resp.data)
+      commit(types.GET_SPECIES, { species, index })
     })
   }
 }
