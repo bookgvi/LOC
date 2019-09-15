@@ -1,8 +1,8 @@
 {
   "name": "starwarsinfo",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "StarWars info app",
+  "productName": "StarWars info app",
   "cordovaId": "org.cordova.quasar.app",
   "author": "bookgvi <bookgvi@gmail.com>",
   "private": true,

@@ -6,21 +6,15 @@ export default [
     align: 'center'
   },
   {
-    name: 'name',
-    label: 'Name',
-    field: 'name',
+    name: 'person',
+    label: 'person',
+    field: 'person',
     align: 'center'
   },
   {
-    name: 'height',
-    label: 'Height',
-    field: 'height',
-    align: 'center'
-  },
-  {
-    name: 'mass',
-    label: 'mass',
-    field: 'mass',
+    name: 'species',
+    label: 'Species',
+    field: 'species',
     align: 'center'
   },
   {
@@ -28,8 +22,5 @@ export default [
     label: 'Homeworld',
     field: 'homeworld',
     align: 'center'
-  },
-  {
-    name: 'species'
   }
 ]
