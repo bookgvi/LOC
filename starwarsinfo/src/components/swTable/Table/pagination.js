@@ -15,7 +15,7 @@ export default {
     setPage (props, value) {
       if (this.pagination[props] === value) { return }
       this.pagination[props] = value
-      this.onRequest(`people/?page=${value}`)
+      this.onRequest(`people/?page=${value}`, { params: { pageSize: 5 } })
     }
   },
   async mounted () {
