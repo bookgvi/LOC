@@ -13,8 +13,8 @@ export default {
   data: () => ({
     columns: [
       { name: 'id', label: 'ID', field: 'id', align: 'center' },
-      { name: 'name', label: 'NAME', field: 'name', align: 'center', width: 200 },
-      { name: 'comment', label: 'COMMENT', field: 'comment', classes: 'text-red' }
+      { name: 'name', label: 'NAME', field: 'name', align: 'center', width: 20 },
+      { name: 'comment', label: 'COMMENT', field: 'comment', classes: 'text-red', width: 20 }
     ]
   })
 }

@@ -3,7 +3,9 @@ export default [
     name: 'id',
     label: '№',
     field: 'id',
-    align: 'center'
+    align: 'center',
+    width: 10,
+    color: 'red'
   },
   {
     name: 'person',

@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import columns from './columns'
 import TableControl from './TableControl'
 import pagination from './pagination'
@@ -35,6 +36,18 @@ export default {
       isLoading: false,
       maxPages: 0
     }
+  },
+  created () {
+    this.columns.forEach((item, index) => {
+      if (item.width) {
+        Vue.set(item, 'style', `width: ${item.width}px`)
+      } else if (item.align) {
+        Vue.set(item, 'align', item.align)
+      } else if (item.classes) {
+        Vue.set(item, 'classes', item.classes)
+      }
+    })
+    console.log(this.columns)
   },
   computed: {
     ...mapGetters([

@@ -15,6 +15,10 @@
         TableControl(v-bind="props" :setPage="setPage")
       template(#header-cell="props")
         q-th(align="center") {{ props.col.label }}
+      template(#body="props")
+        q-tr
+          q-td(v-for="{ value, id } in props.cols" :key="id")
+            div {{ value }}
 </template>
 
 <script>
@@ -34,6 +38,7 @@ export default {
     isLoading: true
   }),
   created () {
+    console.log(this.columns)
     this.columns.forEach((item, index) => {
       if (item.width) {
         Vue.set(item, 'style', `width: ${item.width}px`)
@@ -43,6 +48,13 @@ export default {
         Vue.set(item, 'classes', item.classes)
       }
     })
+    console.log(this.columns)
   }
 }
 </script>
+
+<style scoped>
+  body {
+    oveflow-x: hidden
+  }
+</style>

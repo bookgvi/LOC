@@ -14,7 +14,7 @@ export default {
         {
           id: 1,
           name: 'Item1',
-          comment: 'dummy1'
+          comment: 'dummy1wwwwwwwww wwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwww wwww'
         },
         {
           id: 2,
