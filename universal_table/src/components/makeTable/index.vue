@@ -17,8 +17,8 @@
         q-th(align="center") {{ props.col.label }}
       template(#body="props")
         q-tr
-          q-td(v-for="{ value, id } in props.cols" :key="id" style="width: 100%; overflow-x: hidden")
-            div(style="width: 100%; overflow-x: hidden") {{ value }}
+          q-td(v-for="{ value, id } in props.cols" :key="id" )
+            span(style="width: 10%; white-space: normal;") {{ value }}
 </template>
 
 <script>
@@ -52,9 +52,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  body {
-    oveflow-x: hidden
-  }
-</style>

@@ -4,6 +4,7 @@
     <list default="true" id="355fdd3b-0b4b-43a1-a61a-24e3bc3fd1bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/universal_table/src/components/makeTable/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/universal_table/src/components/makeTable/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/universal_table/src/components/table1/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/universal_table/src/components/table1/index.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569347945519</updated>
-      <workItem from="1569347946810" duration="6245000" />
+      <workItem from="1569347946810" duration="10672000" />
     </task>
     <task id="LOCAL-00001" summary="w">
       <created>1569353763766</created>
@@ -58,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569353955319</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="q">
+      <created>1569354425971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569354425971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
