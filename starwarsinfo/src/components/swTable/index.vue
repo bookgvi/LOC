@@ -12,6 +12,3 @@ export default {
   components: { Table }
 }
 </script>
-
-<style>
-</style>
