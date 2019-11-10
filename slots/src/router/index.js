@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/', name: 'main', component: () => import('../components/Slots')
+    path: '/', name: 'main', component: () => import('../components/Slots/masterRender.vue')
   }
 ]
 
