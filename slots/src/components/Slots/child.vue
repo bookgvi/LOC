@@ -1,11 +1,15 @@
 <template>
-  <div class="slot">
-    <h2 class="text-primary">
-      WTF
-    </h2>
-    <div>
-      <slot :user="user">Default slot </slot>
-      <slot name="wtf" :someHuman="user">{{ user.firstName }}</slot>
+  <div class="slot mt-5">
+    <div class="row">
+      <h2 class="col text-primary">
+        WTF
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col">
+        <slot :user="user">Default slot </slot>
+        <slot name="wtf" :someHuman="user">{{ user.firstName }}</slot>
+      </div>
     </div>
   </div>
 </template>

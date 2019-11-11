@@ -8,8 +8,16 @@ export default {
   render: h => h('div', [
     h('Child', {
       scopedSlots: {
-        default: props => h('span', 'QQ'),
-        wtf: props => h('span', [' ', props.someHuman.firstName, ' ', props.someHuman.lastName])
+        default: props => h('span', {
+          class: {
+            'text-success': true
+          }
+        }, 'QQ'),
+        wtf: props => h('span', {
+          class: {
+            'text-success': true
+          }
+        }, [' ', props.someHuman.firstName, ' ', props.someHuman.lastName])
       }
     })
   ])
