@@ -4,7 +4,8 @@
       WTF
     </h2>
     <div>
-      <slot name="wtf" :someHuman="user">Default value</slot>
+      <slot :user="user">Default slot </slot>
+      <slot name="wtf" :someHuman="user">{{ user.firstName }}</slot>
     </div>
   </div>
 </template>
