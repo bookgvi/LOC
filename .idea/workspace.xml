@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="355fdd3b-0b4b-43a1-a61a-24e3bc3fd1bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/slots/src/components/Slots/child.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slots/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/slots/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slots/src/components/Slots/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slots/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/slots/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slots/src/components/Slots/child.vue" beforeDir="false" afterPath="$PROJECT_DIR$/slots/src/components/Slots/child.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slots/src/components/Slots/masterRender.vue" beforeDir="false" afterPath="$PROJECT_DIR$/slots/src/components/Slots/masterRender.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +64,8 @@
       <workItem from="1571078669455" duration="88000" />
       <workItem from="1571260860445" duration="1701000" />
       <workItem from="1571333643415" duration="61000" />
-      <workItem from="1573417705702" duration="3729000" />
+      <workItem from="1573417705702" duration="6265000" />
+      <workItem from="1573501151231" duration="4857000" />
     </task>
     <task id="LOCAL-00001" summary="w">
       <created>1569353763766</created>
