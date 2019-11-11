@@ -4,9 +4,8 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/', name: 'main', component: () => import('../components/Slots/masterRender.vue')
-  }
+  { path: '/', name: 'main', component: () => import('../components/Slots/masterRender.vue') },
+  { path: '/fabric', component: () => import('../components/Fabric') }
 ]
 
 const router = new VueRouter({
